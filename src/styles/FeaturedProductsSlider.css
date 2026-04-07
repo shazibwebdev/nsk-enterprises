@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+#app {
+    height: 100%;
+}
+
+/* Target the Next (Right) button */
+/* .swiper-button-next,
+.swiper-button-prev {
+  width: 20px;        
+  height: 20px;       
+  color: black;       
+} */
+
+/* Optional: change the icon size */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 26px; 
+}
+
+
+.swiper-prod {
+    width: 95%;
+    height: max-content;
+    background-color: white;
+}
+
+.swiper-prod-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    /* padding: 20px; */
+}
+
+.swiper-slide img {
+    /* display: block; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    /* width: 48px;
+    height: 48px; */
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+}
+
+/* ========== MEDIA QUERY =========== */
+@media screen and (min-width: 640px) {
+
+    .autoplay-progress {
+        width: 48px;
+        height: 48px;
+        font-size: medium;
+    }
+
+
+
+    /* .swiper-prod-slide {
+        padding: 20px 40px;
+    } */
+}
+@media screen and (max-width: 640px) {
+
+    .swiper-prod-slide {
+        /* height: 300px; */
+        /* padding: 20px 40px; */
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .swiper-prod {
+        width: 80%;
+    }
+    
+    .swiper-prod-slide {
+        /* padding: 20px 60px; */
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    .swiper-prod {
+        width: 70%;
+    }
+
+    .swiper-prod-slide {
+        /* padding: 20px 80px; */
+    }
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      font-size: 46px; 
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    
+    .swiper-prod {
+        width: 55%;
+    }
+
+    .swiper-prod-slide {
+        /* padding: 20px 80px; */
+    }
+}
+
+
+@media screen and (min-width: 1536px) {
+    .swiper-prod {
+        width: 60%;
+    }
+}
