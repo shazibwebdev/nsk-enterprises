@@ -32,7 +32,6 @@ A modern, fully responsive e-commerce web application built with React 19 and Vi
 - **Order Confirmation** — Animated confirmation flow with redirect to a Thank You page
 - **User Authentication** — Sign up and log in with form validation; sessions persisted to `localStorage`
 - **User Dashboard** — Overview, order history, and profile management
-- **Dark Mode** — Full dark/light theme toggle using CSS variables and Tailwind's `class` strategy
 - **Page Transitions** — Smooth animated page transitions via Framer Motion
 - **Skeleton Loaders** — Product card and detail page skeletons for perceived performance
 - **Responsive Design** — Mobile-first layout that works across all screen sizes
@@ -102,7 +101,7 @@ src/
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/nsk-enterprises.git
+git clone https://github.com/shazibwebdev/nsk-enterprises.git
 cd nsk-enterprises
 
 # Install dependencies
@@ -129,11 +128,6 @@ npm run build
 npm run preview
 ```
 
-### Lint
-
-```bash
-npm run lint
-```
 
 ---
 
