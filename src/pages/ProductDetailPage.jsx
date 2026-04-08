@@ -55,8 +55,8 @@ function ProductDetailPage() {
                 <div className='w-[90%] m-auto flex flex-col sm:flex-row items-center justify-center gap-5 '>
 
                     {/* IMAGE MAIN */}
-                    <div className='max-h-[60vh]  sm:max-h-[80vh] w-full sm:w-[45%] flex items-center justify-center'>
-                        <img className='w-full rounded-xl h-full object-contain' src={product.image} alt="" />
+                    <div className='max-h-[60vh] rounded-xl overflow-hidden sm:max-h-[80vh] w-full sm:w-[45%] flex items-center justify-center'>
+                        <img className='w-full  h-full object-contain' src={product.image} alt="" />
                     </div>
 
                     {/* DETAIL MAIN */}

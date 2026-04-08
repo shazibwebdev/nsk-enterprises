@@ -45,7 +45,7 @@ const products = [
     price: 69.99,
     description: "Tailored-fit trousers with wrinkle-free fabric, hook-and-bar closure, and side pockets for a polished office look.",
     category: "men's clothing",
-    image: "https://plus.unsplash.com/premium_photo-1689977493146-ed929d07d97e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://plus.unsplash.com/premium_photo-1721742731158-72e78eaa5df8?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://images.unsplash.com/photo-1493357335960-4583bfa6f8d9?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     rating: { rate: 4.1, count: 65 }
   },
   // Home & Kitchen (IDs 6-10) – replaces women's clothing
@@ -120,7 +120,7 @@ const products = [
     price: 899.99,
     description: "Lightweight high-performance laptop featuring 16GB RAM, 512GB SSD, 14-inch Full HD display, and all-day battery.",
     category: "electronics",
-    image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1760604359590-0f0dc7dbbf3c?q=80&w=1269&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     sliderImage: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=1200&h=600&fit=crop",
     rating: { rate: 4.9, count: 143 }
   },
@@ -140,7 +140,7 @@ const products = [
     price: 699.99,
     description: "Latest model smartphone with triple camera system, 128GB storage, 6.5-inch edge-to-edge display, and all-day battery.",
     category: "electronics",
-    image: "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1595514377985-fc9fe1d44f93?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     rating: { rate: 4.6, count: 224 }
   },
   {
@@ -181,11 +181,11 @@ const products = [
   },
   {
     id: 20,
-    title: "Men's Chronograph Watch",
-    price: 149.99,
-    description: "Stainless steel case and bracelet, analog quartz movement with date display, stopwatch function, and water resistance.",
+    title: "Women's Rose Gold Bangle Set",
+    price: 129.99,
+    description: "Set of 5 stackable rose gold bangles with delicate engraved patterns, lightweight and perfect for everyday elegance.",
     category: "jewelery",
-    image: "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1758995119744-6454f091303f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     rating: { rate: 4.6, count: 111 }
   }
 ];
