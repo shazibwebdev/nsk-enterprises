@@ -1,10 +1,13 @@
 import { motion } from 'framer-motion'
 import React from 'react'
-
+import aboutHeroImg from '../../assets/images/About-hero-img.webp'
 
 function AboutHero() {
     return (
-        <header className='height bg-[url(src/assets/images/About-hero-img.webp)] bg-cover bg-center '>
+        <header
+            style={{ backgroundImage: `url(${aboutHeroImg})` }}
+            className={`height bg-cover bg-center `}>
+
             {/* overlay */}
             <div className='w-full height bg-[#00000023] text-center flex justify-center items-center flex-col gap-3'>
                 <motion.h1
@@ -12,7 +15,7 @@ function AboutHero() {
                     initial={{ opacity: 0, y: -50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3, delay: 0.75, ease: 'easeIn', type: 'spring', stiffness: 50 }}
-                    >
+                >
                     <p>Empowering Your Lifestyle With</p>
                     <p className="text-p ">Quality Products</p>
                 </motion.h1>

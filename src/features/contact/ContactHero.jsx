@@ -1,10 +1,14 @@
 import { motion } from 'framer-motion'
 import React from 'react'
+import contactHeroImg from '../../assets/images/Contact-hero-img.webp'
 
 
 function ContactHero() {
     return (
-        <header className='height bg-[url(src/assets/images/Contact-hero-img.webp)] bg-cover bg-bottom '>
+         <header
+            className='height bg-cover bg-bottom'
+            style={{ backgroundImage: `url(${contactHeroImg})` }}
+        >
             {/* overlay */}
             <div className='w-full height bg-[#00000079] text-center flex justify-center items-center flex-col gap-3'>
                 <motion.h1
