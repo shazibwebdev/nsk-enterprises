@@ -25,7 +25,13 @@ export const checkoutReducerFn = (state, action) => {
           ? 20
           : action.payload === '' && 0;
 
-      const grandTotal = state.subtotal - (state.subtotal * (discount / 100)) + state.shippingCost;
+      // console.log(discount);
+      // console.log(state.subtotal + state.shippingCost);
+      // console.log(state.subtotal * (discount / 100), 'discount');
+      let total = state.subtotal + state.shippingCost
+      
+      const grandTotal = total - (total * (discount / 100));
+      console.log(grandTotal);
       
       return {
         ...state,

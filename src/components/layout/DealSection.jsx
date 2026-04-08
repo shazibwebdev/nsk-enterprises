@@ -40,7 +40,7 @@ const DealSection = () => {
                     <img
                         src={dealProd?.image}
                         alt={dealProd?.title}
-                        className="w-full h-full object-contain"
+                        className="w-full h-full rounded object-cover"
                     />
                 </div>
 

@@ -2,6 +2,8 @@
 // Professional product data for e-commerce website
 // Categories: men's clothing, women's clothing, electronics, jewelery
 
+// in data/products.js file, add isFeatured key in all products just products of ids 11,12, 14, 19,20 should be isFeatured: true
+
 const products = [
   {
     id: 1,
@@ -10,7 +12,8 @@ const products = [
     description: "Soft, breathable cotton fabric, ideal for both office and casual outings. Available in multiple sizes and colors.",
     category: "men's clothing",
     image: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400&h=400&fit=crop",
-    rating: { rate: 4.5, count: 134 }
+    rating: { rate: 4.5, count: 134 },
+    isFeatured: false,
   },
   {
     id: 2,
@@ -19,7 +22,8 @@ const products = [
     description: "Modern slim fit jeans with stretch comfort, durable denim, and a stylish look that pairs well with any top.",
     category: "men's clothing",
     image: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=400&h=400&fit=crop",
-    rating: { rate: 4.2, count: 210 }
+    rating: { rate: 4.2, count: 210 },
+    isFeatured: false,
   },
   {
     id: 3,
@@ -28,7 +32,8 @@ const products = [
     description: "Versatile sports jacket with water-resistant finish, breathable mesh lining, perfect for outdoor activities and travel.",
     category: "men's clothing",
     image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=400&fit=crop",
-    rating: { rate: 4.7, count: 89 }
+    rating: { rate: 4.7, count: 89 },
+    isFeatured: false,
   },
   {
     id: 4,
@@ -36,8 +41,9 @@ const products = [
     price: 49.99,
     description: "Cozy hoodie with soft fleece interior, adjustable drawstring hood, and kangaroo pocket for everyday comfort.",
     category: "men's clothing",
-    image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=400&h=400&fit=crop",
-    rating: { rate: 4.3, count: 176 }
+    image: "https://images.unsplash.com/photo-1738486260136-2db6e4d6202d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    rating: { rate: 4.3, count: 176 },
+    isFeatured: true,
   },
   {
     id: 5,
@@ -46,7 +52,8 @@ const products = [
     description: "Tailored-fit trousers with wrinkle-free fabric, hook-and-bar closure, and side pockets for a polished office look.",
     category: "men's clothing",
     image: "https://images.unsplash.com/photo-1493357335960-4583bfa6f8d9?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    rating: { rate: 4.1, count: 65 }
+    rating: { rate: 4.1, count: 65 },
+    isFeatured: false,
   },
   // Home & Kitchen (IDs 6-10) – replaces women's clothing
   {
@@ -56,7 +63,8 @@ const products = [
     description: "Full‑length floral maxi dress with long sleeves and modest neckline.",
     category: "women's clothing",
     image: "https://images.unsplash.com/photo-1612029126596-f6fa7f1dde83?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    rating: { rate: 4.6, count: 245 }
+    rating: { rate: 4.6, count: 245 },
+    isFeatured: false,
   },
   {
     id: 7,
@@ -65,7 +73,8 @@ const products = [
     description: "Elegant silk‑blend blouse with high neckline and long cuffed sleeves.",
     category: "women's clothing",
     image: "https://images.unsplash.com/photo-1718278868740-9351177c5768?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    rating: { rate: 4.4, count: 128 }
+    rating: { rate: 4.4, count: 128 },
+    isFeatured: false,
   },
   {
     id: 8,
@@ -74,7 +83,8 @@ const products = [
     description: "Longline denim jacket with full coverage, button‑up front, and chest pockets.",
     category: "women's clothing",
     image: "https://plus.unsplash.com/premium_photo-1739801197686-0a0e3684f1f4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    rating: { rate: 4.5, count: 201 }
+    rating: { rate: 4.5, count: 201 },
+    isFeatured: false,
   },
   {
     id: 9,
@@ -83,7 +93,8 @@ const products = [
     description: "Elegant midi skirt with high waist and modest below‑knee length.",
     category: "women's clothing",
     image: "https://images.unsplash.com/photo-1754639544919-ea4d1cff7dce?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    rating: { rate: 4.2, count: 78 }
+    rating: { rate: 4.2, count: 78 },
+    isFeatured: false,
   },
   {
     id: 10,
@@ -92,9 +103,9 @@ const products = [
     description: "Cozy oversized sweater that falls below the hip, offering full coverage and warmth.",
     category: "women's clothing",
     image: "https://images.unsplash.com/photo-1687275168955-aacd8bba29cf?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    rating: { rate: 4.3, count: 112 }
+    rating: { rate: 4.3, count: 112 },
+    isFeatured: false,
   },
-  // sliderImage: "https://images.unsplash.com/photo-1434389676690-9c47d1d14a33?w=1200&h=600&fit=crop",
   {
     id: 11,
     title: "Noise Cancelling Wireless Headphones",
@@ -102,8 +113,8 @@ const products = [
     description: "Over-ear headphones with active noise cancellation, 30-hour battery life, and plush ear cushions for immersive sound.",
     category: "electronics",
     image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop",
-    sliderImage: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=1200&h=600&fit=crop",
-    rating: { rate: 4.8, count: 392 }
+    rating: { rate: 4.8, count: 392 },
+    isFeatured: false,
   },
   {
     id: 12,
@@ -111,8 +122,9 @@ const products = [
     price: 199.99,
     description: "Water-resistant smartwatch with heart rate monitor, GPS, customizable watch faces, and smartphone notifications.",
     category: "electronics",
-    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop",
-    rating: { rate: 4.7, count: 287 }
+    image: "https://images.unsplash.com/photo-1762768771889-39edca398901?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    rating: { rate: 4.7, count: 287 },
+    isFeatured: true,
   },
   {
     id: 13,
@@ -121,8 +133,8 @@ const products = [
     description: "Lightweight high-performance laptop featuring 16GB RAM, 512GB SSD, 14-inch Full HD display, and all-day battery.",
     category: "electronics",
     image: "https://images.unsplash.com/photo-1760604359590-0f0dc7dbbf3c?q=80&w=1269&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    sliderImage: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=1200&h=600&fit=crop",
-    rating: { rate: 4.9, count: 143 }
+    rating: { rate: 4.9, count: 143 },
+    isFeatured: false,
   },
   {
     id: 14,
@@ -130,9 +142,9 @@ const products = [
     price: 79.99,
     description: "Compact earbuds with charging case, Bluetooth 5.2, touch controls, and crystal clear sound with deep bass.",
     category: "electronics",
-    image: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400&h=400&fit=crop",
-    sliderImage: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=1200&h=600&fit=crop",
-    rating: { rate: 4.4, count: 534 }
+    image: "https://images.unsplash.com/photo-1593433409228-4ebcf9e31556?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    rating: { rate: 4.4, count: 534 },
+    isFeatured: true,
   },
   {
     id: 15,
@@ -141,7 +153,8 @@ const products = [
     description: "Latest model smartphone with triple camera system, 128GB storage, 6.5-inch edge-to-edge display, and all-day battery.",
     category: "electronics",
     image: "https://images.unsplash.com/photo-1595514377985-fc9fe1d44f93?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    rating: { rate: 4.6, count: 224 }
+    rating: { rate: 4.6, count: 224 },
+    isFeatured: false,
   },
   {
     id: 16,
@@ -150,7 +163,8 @@ const products = [
     description: "Elegant 0.5 carat diamond solitaire ring set in 14k white gold, with a classic prong setting and brilliant sparkle.",
     category: "jewelery",
     image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400&h=400&fit=crop",
-    rating: { rate: 4.9, count: 62 }
+    rating: { rate: 4.9, count: 62 },
+    isFeatured: false,
   },
   {
     id: 17,
@@ -159,7 +173,8 @@ const products = [
     description: "18k gold plated necklace with a delicate pendant, featuring a sparkling cubic zirconia stone, perfect for gifting.",
     category: "jewelery",
     image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&h=400&fit=crop",
-    rating: { rate: 4.5, count: 98 }
+    rating: { rate: 4.5, count: 98 },
+    isFeatured: false,
   },
   {
     id: 18,
@@ -168,7 +183,8 @@ const products = [
     description: "Hypoallergenic sterling silver hoop earrings with a polished finish, lightweight and comfortable for daily wear.",
     category: "jewelery",
     image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=400&h=400&fit=crop",
-    rating: { rate: 4.3, count: 157 }
+    rating: { rate: 4.3, count: 157 },
+    isFeatured: false,
   },
   {
     id: 19,
@@ -176,8 +192,9 @@ const products = [
     price: 89.99,
     description: "Handcrafted bracelet with genuine freshwater pearls, adjustable clasp, adding a touch of elegance to any outfit.",
     category: "jewelery",
-    image: "https://plus.unsplash.com/premium_photo-1681276170008-76db5a27dee9?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    rating: { rate: 4.4, count: 83 }
+    image: "https://images.unsplash.com/photo-1704957205218-d436eac4c607?q=80&w=1168&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    rating: { rate: 4.4, count: 83 },
+    isFeatured: true,
   },
   {
     id: 20,
@@ -186,7 +203,8 @@ const products = [
     description: "Set of 5 stackable rose gold bangles with delicate engraved patterns, lightweight and perfect for everyday elegance.",
     category: "jewelery",
     image: "https://images.unsplash.com/photo-1758995119744-6454f091303f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    rating: { rate: 4.6, count: 111 }
+    rating: { rate: 4.6, count: 111 },
+    isFeatured: true,
   }
 ];
 

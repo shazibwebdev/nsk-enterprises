@@ -14,8 +14,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { Link } from 'react-router-dom';
 import products from '../../data/products';
 
-const featuredIds = [10, 6, 11, 13, 14];
-const featuredProducts = products.filter(p => featuredIds.includes(p.id)).reverse();
+const featuredProducts = products.filter(p => p.isFeatured == true);
 
 export default function FeaturedProductsSlider() {
     const progressCircle = useRef(null);
@@ -40,10 +39,10 @@ export default function FeaturedProductsSlider() {
 
     useEffect(() => {
         window.addEventListener('resize', checkWidth)
-        
+
         checkWidth()
-        
-        return ()=>{
+
+        return () => {
             window.removeEventListener('resize', checkWidth)
 
         }
@@ -71,11 +70,11 @@ export default function FeaturedProductsSlider() {
                     featuredProducts.map(prods => {
                         const { image, sliderImage, id, title } = prods
                         return (
-                            <SwiperSlide key={id} className='swiper-prod-slide'>
-                                <Link to={`/product/${id}`}>
-                                    <img className='w-full h-full object-cover rounded' src={isSliderImg ? sliderImage : image} alt={title} />
-                                </Link>
-                            </SwiperSlide>
+                            <Link to={`/product/${id}`}>
+                                <SwiperSlide key={id} className='swiper-prod-slide '>
+                                    <img className='w-full h-full object-cover rounded object-position-center' src={image} alt={title} />
+                                </SwiperSlide>
+                            </Link>
                         )
                     })
                 }

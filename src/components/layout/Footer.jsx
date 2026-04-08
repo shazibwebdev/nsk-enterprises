@@ -33,9 +33,9 @@ const Footer = () => {
                     <p className="text-sm text-neutral-400">
                         Delivering premium products with unmatched quality and trust. Your satisfaction is our priority.
                     </p>
-                    <h2 className="hover:text-white text-[lightgray] text-sm uppercase">Director: Muhammad Shafiq Mustfai</h2>
+                    {/* <h2 className="hover:text-white text-[lightgray] text-sm uppercase">Director: Muhammad Shafiq Mustfai</h2>
                     <h2 className="hover:text-white text-[lightgray] text-sm ">Contact: <span className='cursor-pointer'>0322-7861858</span></h2>
-                    <h2 className="hover:text-white text-[lightgray] text-sm ">Address: F#9, Sanawar Centre, Morr Samanabad,Lahore.</h2>
+                    <h2 className="hover:text-white text-[lightgray] text-sm ">Address: F#9, Sanawar Centre, Morr Samanabad,Lahore.</h2> */}
                     <div className="flex gap-4 mt-2">
                         <Link to="#">
                             <Facebook className="hover:text-white" size={20} />

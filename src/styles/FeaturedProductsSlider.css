@@ -15,7 +15,7 @@
 /* Optional: change the icon size */
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  font-size: 26px; 
+    font-size: 26px;
 }
 
 
@@ -23,9 +23,12 @@
     width: 95%;
     height: max-content;
     background-color: white;
+    overflow: hidden;
 }
 
 .swiper-prod-slide {
+    height: 60vh;
+    /* border: 2px solid black; */
     text-align: center;
     font-size: 18px;
     display: flex;
@@ -76,6 +79,15 @@
 }
 
 /* ========== MEDIA QUERY =========== */
+@media screen and (max-width: 640px) {
+
+    .swiper-prod-slide {
+        height: 40vh;
+
+    }
+}
+
+
 @media screen and (min-width: 640px) {
 
     .autoplay-progress {
@@ -86,24 +98,15 @@
 
 
 
-    /* .swiper-prod-slide {
-        padding: 20px 40px;
-    } */
 }
-@media screen and (max-width: 640px) {
 
-    .swiper-prod-slide {
-        /* height: 300px; */
-        /* padding: 20px 40px; */
-    }
-}
 
 
 @media screen and (min-width: 768px) {
     .swiper-prod {
         width: 80%;
     }
-    
+
     .swiper-prod-slide {
         /* padding: 20px 60px; */
     }
@@ -119,15 +122,16 @@
     .swiper-prod-slide {
         /* padding: 20px 80px; */
     }
+
     .swiper-button-next::after,
     .swiper-button-prev::after {
-      font-size: 46px; 
+        font-size: 46px;
     }
 }
 
 
 @media screen and (min-width: 1200px) {
-    
+
     .swiper-prod {
         width: 55%;
     }

@@ -77,7 +77,7 @@ const OrderShow = ({ order }) => {
                 {orderDetail.discount > 0 && (
                     <div className='flex justify-between text-sm'>
                         <span>Discount:</span>
-                        <span>-${orderDetail.discount}</span>
+                        <span>-{orderDetail.discount}%</span>
                     </div>
                 )}
                 <div className='flex justify-between font-semibold border-t pt-2'>
